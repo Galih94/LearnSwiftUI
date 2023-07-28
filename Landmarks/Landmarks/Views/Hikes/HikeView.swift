@@ -27,6 +27,7 @@ struct HikeView: View {
                         .labelStyle(.iconOnly)
                         .imageScale(.large)
                         .rotationEffect(.degrees(showdetail ? 90: 0))
+                        .scaleEffect(showdetail ? 1.5 : 1)
                         .padding()
                 })
             }
