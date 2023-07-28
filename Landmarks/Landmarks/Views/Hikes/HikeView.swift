@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+extension AnyTransition {
+    static var moveAndFade: AnyTransition {
+        .asymmetric(
+            insertion: .move(edge: .trailing).combined(with: .opacity),
+            removal: .scale.combined(with: .opacity))
+    }
+}
+
 struct HikeView: View {
     var hike: Hike
     @State private var showdetail = false
@@ -35,6 +43,7 @@ struct HikeView: View {
             }
             if showdetail {
                 HikeDetail(hike: hike)
+                    .transition(.moveAndFade)
             }
         }
     }
