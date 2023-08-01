@@ -39,7 +39,7 @@ struct LandmarkDetail: View {
                         HStack {
                             Text(landmark.name)
                                 .font(.title)
-                                .foregroundColor(.black)
+                                .foregroundColor(.primary)
                             FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
                                 .buttonStyle(.plain)
                         }
