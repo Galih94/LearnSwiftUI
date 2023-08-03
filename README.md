@@ -10,3 +10,5 @@ Learning using swift ui based on swift ui tutorial in Apple Developer (https://d
 - Composing Complex Interfaces
 - Working with UI Controls
 - Interfacing with UIKit
+- Create a watchOS App
+- Create a macOS App
